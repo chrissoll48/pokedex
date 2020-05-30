@@ -2,16 +2,45 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+
+const Foo = ({name}) => {
+return (
+
+  <p>This is a foo component. It's name is {name}</p>
+)
+
+}
+
+const Item= (props) => {
+  return (
+<div>
+    <p>This is ITEM component. It's name is {props.name} </p>
+    <Foo name={'siri'}/>
+    {item}
+</div>
+  )
+
+}
+
+const item= <p>This is an item. Elements are composable</p>
+
+const element = <div>
+  <h1>Hello xtina</h1>
+  <p>test  life</p>
+ 
+  
+  <Item name={'linny'}/>
+  <Foo name={'alexa'}/>
+  </div>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+   //<App />,
+   //element,
+   element,
+
+  document.getElementById('root')
+)
+
+
