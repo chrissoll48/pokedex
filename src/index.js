@@ -2,6 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'semantic-ui-css/semantic.min.css'; 
+import { Button } from 'semantic-ui-react';
+
+
+const ButtonExampleEmphasis = () => (
+  <div>
+    <Button primary>Primary</Button>
+    <Button secondary>Secondary</Button>
+  </div>
+)
 
 
 const Foo = ({name}) => {
@@ -36,9 +46,8 @@ const element = <div>
 
 ReactDOM.render(
 
-   //<App />,
+   <App />,
    //element,
-   element,
 
   document.getElementById('root')
 )
