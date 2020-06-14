@@ -4,12 +4,22 @@ import './App.css';
 
 
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state= {
+      name:"Xtina"
+    }
+  }
+  render(){ 
+    return (
     <div className="App">
-    <PokedexHeader author= {'@chrissoll48'} name={"Xtina"} /> 
+    <PokedexHeader 
+      author= {'@chrissoll48'} 
+      name={this.state.name} /> 
     </div>
   );
+  }
 }
 
 export default App;

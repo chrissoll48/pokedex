@@ -6,7 +6,7 @@ const PokedexHeader = ({author, name}) => {
 return (
     <Segment basic inverted padded='very' vertical>
    <Header as='h1'>This is a Header for {name} Pokedex</Header>
-    <Image src={'logo512.png'} size="mini" centered="true" /> 
+    <Image src={'charmanderbaby2.jpeg'} size="mini" centered="true" /> 
     <Header as= 'h3'> Author: {author}</Header>
   </Segment>
 )
